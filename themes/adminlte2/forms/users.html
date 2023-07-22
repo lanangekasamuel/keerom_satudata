@@ -1,0 +1,100 @@
+        <div class="col-md-12">
+          <div class="box box-primary" id="search_panel">
+            <div class="box-header with-border">
+              <h3 class="box-title">form {status} user</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+
+				<form class="form-horizontal" enctype="multipart/form-data" role="form" method="post" action="{rootdir}giadmin/user">
+
+					<div class="form-group">
+						<label for="username" class="col-sm-2 control-label">Username</label>
+						<div class="col-sm-10 control-group">
+						    <input type="text" class="form-control" name="username" id="username" 
+						    placeholder="isikan username" value="{username}"
+						    {uservalidation} >
+						    <p class="help-block text-red"></p>
+						</div>
+					</div>
+					<div class="form-group">
+					    <label for="pass" class="col-sm-2 control-label">Password</label>
+					    <div class="col-sm-10">
+					      <input type="password" class="form-control" name="pass" id="pass" placeholder="isikan password"  >
+					    </div>
+					</div>
+					<div class="form-group">
+					    <label for="repass" class="col-sm-2 control-label">Ulangi Password</label>
+					    <div class="col-sm-10 control-group">
+					      <input type="password" class="form-control" name="repass" id="repass" 
+					      placeholder="ulangi password"
+					      data-validation-match-match="pass" 
+					      data-validation-match-message="pengulangan password tidak sesuai" >
+					       <p class="help-block text-red"></p>
+					    </div>
+					</div>				    		
+
+					<div class="form-group">
+					    <label for="email" class="col-sm-2 control-label">Email</label>
+					    <div class="col-sm-10">
+					      <input type="email" class="form-control" name="email" id="email" 
+					      placeholder="isikan email" value="{email}" >
+					    </div>
+					</div>
+
+					<div class="form-group">
+					    <label for="idgroup" class="col-sm-2 control-label">Group</label>
+					    <div class="col-sm-5">
+					    	<select name="idgroup" id="idgroup" class="form-control" >
+					    		{opsi_group}
+					    	</select>
+					    </div>
+					</div>	
+
+					<div class="form-group" id="control_instansi">
+					    <label for="idinstansi" class="col-sm-2 control-label">Instansi</label>
+					    <div class="col-sm-10">
+					    	<select name="idinstansi" id="idinstansi" class="form-control" >
+					    		{opsi_instansi}
+					    	</select>
+					    </div>
+					</div>	
+<!--
+					<div class="form-group" id="control_bidang">
+					    <label for="idbidang_instansi" class="col-sm-2 control-label">Bidang</label>
+					    <div class="col-sm-6">
+					    	<select name="idbidang_instansi" id="idbidang_instansi" class="form-control" >
+					    		{opsi_bidang}
+					    	</select>
+					    </div>
+					</div>		
+-->
+					<div class="form-group" id="">
+					    <label for="nama_walidata" class="col-sm-2 control-label">Nama Wali</label>
+					    <div class="col-sm-6">
+					    	<input type="text" class="form-control" name="nama_walidata" id="nama_walidata" 
+					      placeholder="isikan nama" value="{nama_walidata}" >
+					    </div>
+					</div>		
+
+					<div class="form-group" id="">
+					    <label for="kontak" class="col-sm-2 control-label">Kontak / No.Telp</label>
+					    <div class="col-sm-6">
+					    	<input type="text" class="form-control" name="kontak" id="kontak" 
+					      placeholder="isikan no hp/ no telp" value="{kontak}" >
+					    </div>
+					</div>	
+
+					<div class="form-group">
+						<div class="col-sm-offset-2 col-sm-10">
+							<button type="reset" onClick="javascript:history.go(-1);" class="btn btn-warning btn-flat"><i class="fa fa-close"></i>&nbsp;Batal</button>
+						    <button type="submit" class="btn btn-flat btn-info"><i class="fa fa-save"></i>&nbsp;Simpan</button>
+						</div>
+					</div>	
+					<input type="hidden" name="id" id="id" value="{id}" />
+					<input type="hidden" name="cntmode" id="cntmode" value="{action}" />
+				</form>
+			</div>
+		</div>
+
+			

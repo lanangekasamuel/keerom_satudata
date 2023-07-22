@@ -1,0 +1,77 @@
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+    Dashboard : {user}
+    <!-- <small>Pusdalisbang.Control panel</small> -->
+    </h1>
+    <div>
+    <!-- <li>terakhir login (admin|skpd)</li> -->
+    <!-- <li>menu (link ke entri data u/ SKPD), atau full control panel untuk ADMIN</li> -->
+    <!-- <li>data terisi/belum terisi (admin|skpd)</li> -->
+    <!-- <li>laporan (admin : keaktifan skpd)</li> -->
+    <!-- <li>instansi yang tanpa indikator ??</li> -->
+    </div>
+</section>
+
+<!-- Main content -->
+<section class="content">
+
+    <h3>% Entry Progress</h3>
+    Progress Input (ketersediaan Data) Total, dibandingkan antara indikator yang sudah di entry (bukan 0/kosong) dan jumlah total indikator pertahunnya.
+    <hr>
+    <!-- Small boxes (Stat box) -->
+    <div class="row" id="entry_progress">
+        {entry_progress}
+    </div>
+
+    <h3> % Ketersediaan Data Instansi</h3>
+    Progress Input (Ketersediaan Data) masing-masing Instansi, dibandingkan antara indikator yang sudah di entry (bukan 0/kosong) dan jumlah total indikator pertahunnya.
+    <hr><!-- 
+    <li>pilihan SKPD</li>
+    <li>filter by progress entry data</li>
+    <li>filter by jumlah indikator</li> -->
+
+<div class="well no-shadow">
+    <div class="row">
+        <div class="col-md-12 form-group">
+            <div class="col-md-4 col-sm-12 col-xs-12 input-label"><b>Filter berdasarkan Instansi</b></div>
+            <div class="col-md-6 col-sm-12 col-xs-12 input-group">
+                <select name="filter-instansi" id="filter-instansi" class="form-control">
+                <option value=0>Semua Instansi</option>
+                {opsi_filter_instansi}
+            </select>
+            </div>                  
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 form-group">
+            <div class="col-md-4 col-sm-12 col-xs-12 input-label"><b>Urutkan berdasarkan Progress Entry</b></div>
+            <div class="col-md-4 col-sm-12 col-xs-12 input-group">
+                <select name="filter-progress" id="filter-progress" class="form-control">
+                    <option value='0'>-- Pilih Pengurutan --</option>
+                    <option value='ASC'>dari yang Paling Sedikit / Kosong</option>
+                    <option value='DESC'>dari yang Terbanyak</option>
+                </select>
+            </div>                  
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 form-group">
+            <div class="col-md-4 col-sm-12 col-xs-12 input-label"><b>Urutkan berdasarkan Jumlah Indikator</b></div>
+            <div class="col-md-4 col-sm-12 col-xs-12 input-group">
+                <select name="filter-indikator" id="filter-indikator" class="form-control">
+                    <option value='0'>-- Pilih Pengurutan --</option>
+                    <option value='ASC'>dari yang Paling Sedikit / Kosong</option>
+                    <option value='DESC'>dari yang Terbanyak</option>
+                </select>
+            </div>                  
+        </div>
+    </div>
+</div>
+
+    <hr>
+    <div id="testtc"></div>
+    {entry_progress_instansi}
+
+</section>

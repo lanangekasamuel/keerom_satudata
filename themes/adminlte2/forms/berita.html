@@ -1,0 +1,70 @@
+<div class="box box-default">
+    <div class="box-header">
+        <h4>Form {status} berita</h4>
+    </div>
+    <div class="box-body">
+
+    	<form class="form-horizontal" enctype="multipart/form-data" role="form" method="post" action='{rootdir}giadmin/berita'>	
+
+			<div class="form-group row">
+				<label for="postdate" class="col-sm-2 control-label">Tanggal</label>
+				<div class="col-sm-3">
+				    <div class="input-group"  data-date-format="yyyy-mm-dd">
+				      <input type="text" class="form-control" name="postdate" id="postdate" value="{postdate}" >
+				      <span class="input-group-btn">
+				        <button class="btn btn-default add-on" type="button" onclick="$('#postdate').focus();"><span class="fa fa-calendar"></span></button>
+				      </span>
+				    </div>
+			    </div>
+			</div>
+
+			<div class="form-group">
+			    <label for="title" class="col-sm-2 control-label">Judul</label>
+			    <div class="col-sm-10">
+			      <input type="text" class="form-control" name="title" id="title" 
+			      placeholder="isikan title" value="{title}" >
+			    </div>
+			</div>
+
+			<div class="form-group">
+			    <label for="content" class="col-sm-2 control-label">Isi Berita</label>
+			    <div class="col-sm-10">
+					<textarea class="form-control" name="content" 
+					id="content" rows="5" placeholder="isikan content" >{content}</textarea>
+				</div>
+			</div>
+									  									  
+			<div class="form-group">
+			    <label for="image" class="col-sm-2 control-label">File gambar</label>
+			    <div class="col-sm-10">
+			    	<input type="file" name="image" id="image">
+			    	<p class="help-block">File gambar format jpg ukuran 270px x 196px </p>
+			  	</div>
+			</div>
+
+			<div class="form-group">
+			    <div class="col-sm-offset-2 col-sm-10">
+			      <button type="submit" class="btn btn-default">Submit</button>
+			    </div>
+			</div>	
+			<input type="hidden" name="id" id="id" value="{id}" />
+		  	<input type="hidden" name="cntmode" id="cntmode" value="{action}" />
+	    </form>
+	</div>
+</div>
+
+<script>
+
+	$('#postdate').datepicker({
+		format: 'yyyy-mm-dd'
+	}).on('changeDate', function(ev){					
+		$('#postdate').text($('#postdate').data('date'));					
+		$('#postdate').datepicker('hide');
+		});
+				
+
+</script>
+
+				
+ <script type="text/javascript" src="{themepath}plugins/tinymce/tiny_mce.js"></script>
+ <script type="text/javascript" src="{themepath}js/tiny-config.js"></script>

@@ -1,0 +1,109 @@
+
+body,.startpage{
+	background-image: url('../../../files/images/map-background.jpg') !important;
+	background-size: 100%;
+	font-family:myFirstFont;
+}
+
+.container{
+	width: auto;
+	margin: 0px;
+	padding: 0px 20px;
+
+}
+
+.main-footer {
+	background-color: #444444;
+	position : fixed;
+	bottom :0px;
+	width: 100%;
+	color:#ffffff;
+}
+
+#navbar-collapse {
+	display:   !important;
+}
+
+
+.pusda-title{
+	font-size: 25px;
+}
+
+.btn-utama{
+	font-size: 18px;
+	padding: 10px 20px;
+	display: inline-block;
+	min-width: 50%;
+	font-family:myFirstFont;
+}
+
+.action{
+	font-size: 18px;
+}
+
+@font-face{font-family: myFirstFont;src: url('../sansation_light.woff');}
+.f-sansa{font-family:myFirstFont;}
+
+.btn-app{
+	padding: 20px;
+	font-size: 20px;
+	height: 120px;
+}
+
+.text-right{
+	text-align: right;
+}
+
+.text-left{
+	text-align: left;
+}
+
+.center-all{
+	vertical-align: middle;
+}
+
+
+/*fixing layout*/
+#navbar-collapse, .navbar-toggle{
+	display: none !important;
+}
+
+i.btn-left,div.secondary-logo{
+	display: none;
+}
+
+@media (max-width: 765px) {
+	/*xs-medium*/
+    .col.text-right, .btn.text-right, .col.text-left, .btn.text-left{
+    	text-align: center;
+    }
+    div.base-logo{
+    	display: none;
+    }    
+    div.secondary-logo{
+    	display: block;
+    }
+    i.btn-right{
+    	display: none;
+    }
+    i.btn-left{
+    	display: inline;
+    }
+}
+
+@media (min-width: 768px) {
+	/*small*/
+
+}
+
+@media (min-width: 992px) {
+	/*medium*/
+
+}
+
+@media (min-width: 1200px) {
+	/*large*/
+
+}
+
+

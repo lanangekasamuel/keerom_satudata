@@ -1,0 +1,42 @@
+
+<div class="box box-default">
+    <div class="box-header">
+        <h4>Form {status} galeri</h4>
+    </div>
+    <div class="box-body">
+    	<form class="form-horizontal" enctype="multipart/form-data" role="form" method="post" action="{rootdir}giadmin/galerialbum">	
+			<div class="form-group">
+			    <label for="album" class="col-sm-2 control-label">Judul Album</label>
+			    <div class="col-sm-10">
+			      <input type="text" class="form-control" name="album" id="album" 
+			      placeholder="isikan judul album" value="{album}" >
+			    </div>
+			</div>
+		
+			<div class="form-group">
+			    <label for="keterangan" class="col-sm-2 control-label">Keterangan</label>
+			    <div class="col-sm-10">
+					<textarea class="form-control" name="keterangan" 
+					id="keterangan" rows="3">{keterangan}</textarea>
+				</div>
+			 </div>						
+			
+<!-- 			<div class="form-group">
+			    <label for="postdate" class="col-sm-2 control-label">Postdate</label>
+			    <div class="col-sm-10">
+			      <input type="text" class="form-control" name="postdate" id="postdate" 
+			      placeholder="isikan postdate" value="{postdate}" >
+			    </div>
+			</div> -->
+
+			<div class="form-group">
+			    <div class="col-sm-offset-2 col-sm-10">
+			      <button type="submit" class="btn btn-default">Simpan</button>
+			    </div>
+			</div>	
+			<input type="hidden" name="id" id="id" value="{id}" />
+		  	<input type="hidden" name="cntmode" id="cntmode" value="{action}" />
+	    </form>
+	</div>
+</div>
+

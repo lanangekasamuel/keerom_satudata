@@ -1,0 +1,53 @@
+<li class="dropdown intro">
+  <!-- Menu Toggle Button -->
+  <a href="" id="btn_intro" class="dropdown-toggle" data-toggle="dropdown">
+    <!-- <h3 style="margin:0px;" class="text-center larger-menu-icon"><i class="fa fa-question-circle"></i></h3><i class="fa fa-question-circle menu-icon"></i>&nbsp;Tips  -->
+    <i class="fa fa-question-circle"></i>&nbsp;Tips 
+  </a>
+</li>
+
+<li class="dropdown user user-menu" data-step="2" data-position="left" data-intro="untuk mengakses halaman administrasi, silakan pilih menu ini">
+  <!-- Menu Toggle Button -->
+  <a href="#" class="dropdown-toggle text-center" data-toggle="dropdown">
+    <!-- The user image in the navbar-->
+    <!-- <div class="" style="margin-bottom:7px; display:block;"><img src="{home}files/skpd/basic.png" class="user-image" alt="User Image"></div><br> -->
+    <img src="{home}files/skpd/basic.png" class="user-image" alt="User Image">
+    <!-- hidden-xs hides the username on small devices so only the image appears. -->
+    <span class="hidden-xs">{user_name}</span>
+  </a>
+  <ul class="dropdown-menu">
+    <!-- The user image in the menu -->
+    <li class="user-header">
+      <img src="{home}files/skpd/basic.png" class="img-circle" alt="User Image">
+      <p>
+        {user_name}
+        <small>{user_title}</small>
+      </p>
+    </li>
+    <!-- Menu Body -->
+    <li class="user-body">
+      <div class="row">
+        <div class="col-xs-12 col-md-12 col-sm-12 text-center btn-group">
+          <a href="{home}giadmin"><button class="btn btn-block btn-flat btn-success">Administrasi</button></a>
+          <a href="{home}giadmin/profil"><button class="btn btn-block btn-flat btn-warning">Ubah Password</button></a>
+        </div>
+        <!-- <div class="col-xs-4 text-center">
+          <a href="#">Sales</a>
+        </div>
+        <div class="col-xs-4 text-center">
+          <a href="#">Friends</a>
+        </div> -->
+      </div>
+      <!-- /.row -->
+    </li>
+    <!-- Menu Footer-->
+    <li class="user-footer">
+      <div class="pull-left">
+        <!-- <a href="#" class="btn btn-default btn-flat">Profile</a> -->
+      </div>
+      <div class="pull-right">
+        <a href="{home}giadmin/logout" class="btn btn-default btn-flat"><i class="fa fa-sign-out"></i>&nbsp;Sign out</a>
+      </div>
+    </li>
+  </ul>
+</li>

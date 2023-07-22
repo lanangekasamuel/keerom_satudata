@@ -1,0 +1,785 @@
+@font-face{font-family: myFirstFont;src: url('../sansation_light.woff');}
+
+.f-sansa{
+	font-family:myFirstFont;
+}
+
+.main-footer {
+	background-color: #444444;
+	color:#ffffff;
+	font-family:myFirstFont;
+}
+
+.link-instansi li{
+	list-style: none;
+	display: inline-block;
+}
+
+.link-instansi li a img{
+	height: 64px;
+	opacity: 0.4;
+}
+
+.link-instansi li a img:hover{
+	opacity: 1.0;
+}
+
+.mb-10{
+	margin-bottom: 10px !important;
+}
+
+.ms-5{
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.content-wrapper{
+	background-image: url('../../../files/images/bg-01.jpg');
+	background-size: 100% 100%;
+}
+
+div.panel-collapse ul {padding-left: 0px;}
+
+#faq_content ol {
+	padding-left: 0px; !important;
+}
+
+/* tabel/input for edit kelompok detail*/
+div.progis-option {
+	
+}
+
+div.progis-option div.option-content {
+	margin-left : -10px;
+	margin-right : -10px;
+	margin-bottom: 7px; !important;
+	padding: 3px 10px;
+	border-top: 1px solid #3c8dbc;
+	/*#f4f4f4; */
+}
+
+div.progis-option div.option-content:last-child {
+	border-bottom: 1px solid #3c8dbc; 
+}
+
+div.ie_option{
+	margin-bottom: 10px; !important;
+}
+div.progis-option div.form-group{
+	margin-bottom: 5px; !important;
+}
+div.progis-option div.input-group{
+	margin-bottom: 5px; !important;
+}
+
+div.progis-option select{
+	padding: 6px 12px; !important;
+}
+
+div.box-header.no-margin {
+	padding-left: 0px; !important;
+	padding-right: 0px; !important;
+	padding-bottom: 20px; !important;
+}
+
+table.detail_data{
+	border-spacing: 1px;
+}
+table.detail_data tr th{
+	background-color: #3c8dbc;
+	border:1px solid #dddddd;
+	padding: 5px;
+	color: #ffffff;
+	text-align: center;
+	vertical-align: middle;
+}
+table.detail_data tr.kelompok_parent td{
+	background-color: #39CCCC;
+}
+table.detail_data tr td{
+	border:1px solid #888888;
+	padding: 3px 5px;
+}
+
+table.detail_data tr td.td_input{
+	padding: 0px;
+}
+table.detail_data tr td.number-kabupaten{
+	text-align: right;
+	width: 20px;
+	border-right: none !important;
+}
+
+table.detail_data tr.row-level-0 td{
+	background-color: #99FFCC;
+}
+
+table.detail_data tr.row-level-1 td{
+	background-color: #CCFFFF;
+}
+
+table.detail_data tr.row-level-2 td{
+	background-color: #FFCCFF;
+}
+
+table.detail_data tr.row_rekap td.nilai,
+table.detail_data tr.row_rekap td.satuan
+{
+	text-align: center;
+}
+
+/*td data rekap */
+td.nilai_formula{
+	color:#6667ff;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.detail_input{
+	position: relative;
+	margin: 0px;
+	padding: 3px;
+	background-color:transparent;
+	border:transparent;
+/*	border-bottom:1px dashed #888888;*/
+	border:2px transparent;
+	border-bottom:1px dashed #00a65a;
+	/*border-left:2px dashed #00a65a;*/
+	text-align: right;
+	min-width:70px;
+	width: 100%;
+	min-height:32px;
+	height: 100%;
+	overflow: show;
+	/*border-bottom-left-radius: 25%;*/
+	/*height: 100%;*/
+}
+
+.detail_input:focus{
+	/*background-color: #3c8dbc;*/
+	background-color: #FFFFFF;
+	/*color: #ffffff;*/
+	border:2px solid #ffcc77;
+	border-radius:0px;
+}
+/*end tabel/input for detail data*/
+
+/*IMPORT*/
+
+.import_process span{
+	display: inline-table;
+	padding: 2px;
+	margin:1px 0px;!important;
+}
+
+/**/
+
+/*skpd page*/
+div.list-kelompok-skpd li {
+	margin-left: -15px;
+	padding-top:2px;
+	padding-bottom:2px;
+	border-bottom : 1px dashed #ffcc77;;
+}
+
+div.list-kelompok-skpd li:hover {
+	color: #3c8dbc;;
+}
+
+.btn-chart-skpd{
+	margin: 1px;
+	margin-right: 3px;
+}
+/**/
+
+
+.select2-selection.select2-selection--single{
+	padding-bottom: 26px; !important;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.notification-container{
+	position: fixed;
+	bottom:0px;
+	right:10px;
+	background-color: #ffffff;
+}
+
+.progis-option{
+	margin-bottom:10px;
+}
+
+#table_kelompok_input tr th{
+	text-align: center;
+	vertical-align: middle;
+}
+
+/* front series */
+.sb1, .sb2, .sb3{
+	display: none;
+}
+.sb2,.sb3{
+	border-left : 1px solid #f4f4f4;
+}
+.series-content{
+	padding: 0px;
+}
+
+.series-info{
+	float: left;
+	width: 55%;
+	padding:10px 0px;
+}
+.series-info>h1, .series-info>h3{
+	padding: 0px;
+	margin: 0px;
+}
+.series-info>h1{
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 20px;
+	margin-bottom: 5px;
+}
+.series-info>h3{
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.series-author i.fa{
+	font-size: 16px;
+	margin-right: 5px;
+}
+.series-author{
+	display: inline-block;
+    padding: 3px 7px;
+    background: #2ecc71;
+    color: #fff;
+    margin-bottom: 5px;
+}
+.series-info>span{
+	clear: both;
+	color: #aaa;
+}
+
+.series-value{
+	float: left;
+	overflow: hidden; 
+	width: 45%;
+}
+.series-vb{
+	border-bottom:1px solid #ddd; 
+	border-left:1px solid #ddd;
+	padding: 5px;
+}
+.series-vb:last-child{
+	border-bottom: none;
+	border-left:1px solid #ddd;
+}
+.series-vb i.fa{
+	float: left;
+	font-size: 35px;
+	margin: 8px 10px 8px 10px;
+}
+
+.series-vb>h4{
+	font: 12px 'lucida grande',tahoma,verdana,arial,sans-serif;
+	padding: 0px;
+	margin:0px;
+	font-weight: bold;
+}
+.series-vb>span{
+	color: #aaa;
+	line-height: 15px;
+}
+
+.series-value-num{
+	font-size: 16px;
+	line-height: 25px;
+	padding: 0px;
+	margin:0px;
+}
+
+.smax i.fa, .smax .series-value-num{
+	color: #c0392b;
+}
+.smin i.fa, .smin .series-value-num{
+	color: #3498db;
+}
+.savg i.fa, .savg .series-value-num{
+	color: #333;
+}
+/* front series */
+
+/* skpd list */
+.list-kelompok-skpd  li {
+	list-style-type: none;
+	padding: 5px 0px;
+}
+
+.list-kelompok-skpd  li  div{
+	float: left;
+	padding-left: 5px;
+}
+
+.list-kelompok-skpd  li  span{
+	float: left;
+	width: 80%;
+	line-height: 25px;
+	padding-left: 5px;
+}
+
+.clear{
+	clear: both;
+}
+
+/* -- skpd list */
+
+
+/*dashboard admin*/
+div.progress.instansi{
+	border: 1px solid #00a65a !important;
+}
+
+
+/*removing css values*/
+.no-padding-side{
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+
+/*removing css values*/
+.btn-no-padding{
+	padding: 2px 5px !important;
+}
+
+
+/*bag*/
+.bg-white{
+    color: #000;
+    background-color: #ffffff !important;
+}
+
+.bg-white:hover{
+	color: #000 !important; 
+}
+
+
+.bg-cendrawasih{
+  background-image:url('../../../files/images/bg-new.png');
+  background-repeat: no-repeat;
+}
+
+.bg-cendrawasih-mirror{
+  background-image:url('../../../files/images/bg-new-mirror.png');
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+/*
+.carousel-caption{
+	position: absolute;
+	background-color:#888888;
+}
+*/
+
+.col-test{
+	min-height: 100px;
+	padding: 3px;
+	border : 1px solid #555555;
+	background-color: #dddddd;
+}
+
+
+/*FOOTER MARQUEEE	*/
+
+.bg-marq-news,.marq-news{
+	min-height: 40px;
+	/*display: none;*/
+}
+
+.marq-news{
+	position: fixed;
+	bottom: 0px;
+	left:0px;
+	width: 100%;
+	padding: 10px 15px;
+	background-color: #555555;
+	border-top: 2px solid #454545;
+	color: #ffffff;
+}
+
+.feed-logo{
+	border-right: 1px solid #aaaaaa;
+}
+/*FOOTER MARQUEEE	*/
+
+
+/*/tentang pusdalisbang*/
+.direct-chat-img{
+	width: 100px;
+	height: 100px;
+	border: 2px solid #4f4f4f;
+}
+
+.direct-chat-text{
+	margin: 5px 0 0 110px;
+	box-shadow: 1px 1px 1px #cccccc;
+	background-color: #efefef;
+	font-size: 14px;
+}
+
+.right .direct-chat-text {
+	margin-right: 110px;
+    margin-left: 0;
+}
+
+/*index. kontak footer*/
+
+.item-content h6.title{
+	margin-left:25px;
+}
+
+.item-content div.icon.contact{
+	display: inline-block;
+	position: absolute;
+	/*top:10px;*/
+}
+
+.link-kontak{
+	margin-bottom: 0px;
+}
+
+/*defaut content font-fam*/
+
+.content-wrapper{
+	font-family: 'Source Sans Pro',sans-serif;
+}
+
+/*/index. daftra aplikasi*/
+
+.users-list>li {
+    width: 50%;
+    float: left;
+    padding: 10px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .users-list>li {
+    	width: 20%;
+    }
+}
+
+@media (min-width: 992px) {
+    .users-list>li {
+    	width: 15%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .users-list>li {
+    	width: 10%;
+    }
+}
+
+.users-list>li img {
+    border-radius: 20%;
+    max-width: 100%;
+    height: auto;
+    border:1px solid #efefef;
+}
+
+/*/.list gerbangmas list */
+
+.list-gerbangmas>ul>li{
+	font-weight: bold;
+	margin-top: 10px;
+	list-style: none;
+}
+
+.align-center{
+	text-align: center;
+}
+.align-right{
+	text-align: right;
+}
+.align-left{
+	text-align: left;
+}
+
+/**/
+/*.info-box{
+	height: auto;
+	padding: 2px 9px;
+}
+*/
+/*berita*/
+
+.date div.day,.date div.month{
+	display: inline-block;
+	vertical-align: middle;
+	height: 40px;
+	border:1px solid #00c0ef;
+}
+.date div.day{
+	font-size: 2em;
+	padding: 0px 5px;
+	background-color: #00c0ef;
+	color: #ffffff;
+}
+.date div.month{
+	font-size: 1.2em;
+	margin-left: 0px;
+	padding: 5px 15px;
+	background-color: #efefef;
+}
+
+.text h4.title{
+	padding-top: 5px;
+	border-top: 1px solid #00c0ef;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #00c0ef;
+}
+.wp-post-image{
+	margin-right: 10px;
+	margin-bottom: 10px;
+	border-radius: 5%;
+	box-shadow: 1px 3px 1px #dddddd;
+}
+
+li.latest-news{
+	list-style: none;
+}
+
+li.latest-news div.date div.day,
+li.latest-news div.date div.month{
+	display: inline-block;
+	vertical-align: middle;
+	height: 24px;
+	border:1px solid #00c0ef;
+}
+
+.title.latest-news{
+	font-size: 1em !important;
+	margin-left: 0px !important;
+}
+
+.day.latest-news{
+	font-size: 1em !important;
+}
+.month.latest-news{
+	font-size: 1em !important;
+	padding: 0px 5px !important;
+}
+
+/*akhir dari css berita*/
+
+/*admin Dash*/
+
+input.dial{
+	color: #ffffff !important;
+}
+.info-box span.info-box-icon{
+	padding-top: 5px !important;
+}
+
+.progress-instansi{
+	border-left:1px solid #ddddd;
+}
+
+
+
+/*progis page*/
+
+/*navigasi tahunan chart*/
+.chartnav-r,.chartnav-l{
+	position: absolute;
+	top: 380px;
+	font-size: 30px;
+	padding: 5px 20px;
+	border-radius: 10%;
+	border:1px solid #aaaaaa;
+	background-color: #ffffff;
+	opacity: 0.6;
+	cursor: pointer;
+}
+
+.chartnav-r:hover,.chartnav-l:hover{
+	color: #ffffff;
+	background-color: #3c8dbc;
+	opacity: 1.0;
+}
+
+.chartnav-r{
+	right:50px
+}
+
+.chartnav-l{
+	left:50px
+}
+
+
+/*output pusdalisbnag*/
+@media (max-width: 765px) {
+	/*xs-medium*/
+	.jssor-pictures,.jssor-container{
+		max-width: 600px;
+	}
+	.jssor-pictures{
+		max-height: 400px
+	}
+	.jssor-container{
+		max-height: 460px;
+	}
+}
+
+@media (min-width: 768px) {
+	/*small*/
+
+}
+
+@media (min-width: 992px) {
+	/*medium*/
+
+}
+
+@media (min-width: 1200px) {
+	/*large*/
+
+}
+
+/*custom datatbles*/
+table.table-condensed-side tr td, table.table-condensed-side tr th{
+	padding: 0px 5px;
+} 
+
+table.table-condensed-side tr th{
+	padding: 5px 5px;
+	background-color: #367fa9;
+	color: #ffffff;
+} 
+
+table.table-condensed-side tr td{
+} 
+
+table.table-condensed-side tr td a.btn{
+	padding: 4px 6px !important;
+	margin: 1px 0px !important;
+} 
+
+
+/*printing*/
+div.print_header{
+	padding: 10px;
+	background-color: #eee;
+	border-bottom: 1px solid #aaa;
+	font-size: 14px;
+}
+#print_modal{
+	padding: 0px;
+}
+#print_modal div.modal-dialog{
+	margin:0px;
+	padding: 0px;
+	width: 100%;
+	min-height: 100%;
+	height: 100%;
+	background-color: #fff;
+}
+@media : print {
+	#print_header {
+		display: none;
+	}
+	#print_area{
+		background-color: #FFFFFF;
+		font-size: 11px !important;
+	}
+}
+
+/*#print_menu {
+	position: fixed;
+	padding: 5px 15px;
+	margin:5px;
+	right: -60px;
+	top:2px;
+	background-color: #eee;
+
+    -webkit-transition: right 0.7s;
+}
+
+
+#print_menu:hover {
+	right: 0px;
+}*/
+
+#print_title{
+	font-size:1.5em;
+	border-bottom: 2px solid #aaaaaa;
+	text-align: center;
+	margin : 10px 0px;
+	padding: 5px;
+}
+
+div.introjs-tooltiptext{
+  font-size: 1.2em !important;
+}
+
+.navbar.navbar-fixed-top{
+	border-bottom: 2px solid #ddeeff;
+}
+
+.larger-menu-icon, .navbar-brand.navbar-brand-large{
+    display: none;
+}
+div.fix-balancer{
+	height: 52px;
+	}
+
+.menu-icon{
+    display: inline-block;
+}
+
+@media (min-width: 768px) {
+  .larger-menu-icon, .navbar-brand.navbar-brand-large{
+    display: block;
+  }
+  .menu-icon, .navbar-brand.navbar-brand-mini{
+    display: none;
+	}
+	div.fix-balancer{
+	height: 79px;
+	}
+}
+
+
+.intro-content-title{
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+
+/*leveling */
+
+tr.data-level-0 td {
+    background-color: #e4ffdb;
+    font-weight: 600;
+}
+
+tr.data-level-0.inactive td {
+    background-color: #f7f7f7;
+    font-weight: 600;
+}
+
+tr.data-level-1 td {
+    /*background-color: #f9fff7;*/
+    font-weight: 500;
+}
+
+tr.data-level-1.inactive td {
+    background-color: #fafafa;
+    font-weight: 500;
+}
+
+#pdf_container:fullscreen {
+	width: 100% !important;
+	height: 100% !important;
+}

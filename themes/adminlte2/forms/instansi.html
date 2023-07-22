@@ -1,0 +1,81 @@
+        <div class="col-md-12">
+          <div class="box box-primary" id="search_panel">
+            <div class="box-header with-border">
+              <h3 class="box-title">Form {status} Instansi</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+
+
+				<form class="form-horizontal" enctype="multipart/form-data" role="form" method="post" action="{rootdir}giadmin/instansi">
+
+					<div class="form-group">
+						<label for="nama_instansi" class="col-sm-2 control-label">Nama Instansi</label>
+						<div class="col-sm-10 control-group">
+						    <input type="text" class="form-control" name="nama_instansi" id="nama_instansi" 
+						    placeholder="isikan nama instansi" value="{nama_instansi}"
+						    data-validation-ajax-ajax="{rootdir}ajax/instansi/instansicheck/1" >
+						    <p class="help-block text-red"></p>
+						</div>
+					</div>		    		
+
+					<div class="form-group">
+					    <label for="singkatan" class="col-sm-2 control-label">Singkatan</label>
+					    <div class="col-sm-10">
+					      <input type="text" class="form-control" name="singkatan" id="singkatan" 
+					      placeholder="isikan singkatan" value="{singkatan}" >
+					    </div>
+					</div>
+
+<!-- idinstansi, nama_instansi, singkatan, kode_urusan, kode_suburusan, kode_organisasi, idtipe_instansi, idkategori_instansi -->
+
+					<div class="form-group">
+					    <label for="idtipe" class="col-sm-2 control-label">Tipe Instansi</label>
+					    <div class="col-sm-5">
+					    	<select name="idtipe" id="idtipe" class="form-control" >
+					    		{opsi_tipe}
+					    	</select>
+					    </div>
+					</div>	
+
+					<div class="form-group">
+					    <label for="kode_urusan" class="col-sm-2 control-label">Bidang Urusan</label>
+					    <div class="col-sm-5">
+					    	<select name="kode_urusan" id="kode_urusan" class="form-control" >
+					    		{opsi_urusan}
+					    	</select>
+					    </div>
+<!-- 					    <div class="col-sm-3">
+					    	<select name="sub_urusan" id="sub_urusan" class="form-control" >
+					    		{opsi_suburusan}
+					    	</select>
+					    </div>
+					    <div class="col-sm-3">
+					    	<select name="kode_organisasi" id="kode_organisasi" class="form-control" >
+					    		{opsi_organisasi}
+					    	</select>
+					    </div> -->
+					</div>						
+
+					<div class="form-group">
+					    <label for="idkategori" class="col-sm-2 control-label">Kategori Instansi</label>
+					    <div class="col-sm-5">
+					    	<select name="idkategori" id="idkategori" class="form-control" >
+					    		{opsi_kategori}
+					    	</select>
+					    </div>
+					</div>	
+
+					<div class="form-group">
+						<div class="col-sm-offset-2 col-sm-10">
+							<button type="reset" onClick="javascript:history.go(-1);" class="btn btn-warning btn-flat"><i class="fa fa-close"></i>&nbsp;Batal</button>
+						    <button type="submit" class="btn btn-flat btn-info"><i class="fa fa-save"></i>&nbsp;Simpan</button>
+						</div>
+					</div>	
+					<input type="hidden" name="id" id="id" value="{id}" />
+					<input type="hidden" name="cntmode" id="cntmode" value="{action}" />
+				</form>
+			</div>
+		</div>
+
+			

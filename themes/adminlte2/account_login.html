@@ -1,0 +1,56 @@
+<li class="dropdown intro">
+  <!-- Menu Toggle Button -->
+  <a href="" id="btn_intro" class="dropdown-toggle" data-toggle="dropdown">
+    <i class="fa fa-question-circle"></i>&nbsp;Tips 
+  </a>
+</li>
+
+<li class="dropdown user user-menu" data-step="2" data-position="left" data-intro="untuk masuk halaman administrasi, silakan login terlebih dahulu">
+  <!-- Menu Toggle Button -->
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+    <!-- The user image in the navbar-->
+    <i class="fa fa-fw fa-user"></i>
+    <!-- hidden-xs hides the username on small devices so only the image appears. -->
+    <span class="hidden-xs">Account</span>
+  </a>
+  <ul class="dropdown-menu">
+    <!-- The user image in the menu -->
+    <!-- Menu Body -->
+    <li class="user-body">
+      <div class="row" style="padding:10px;">
+        <p>Account Login</p> 
+        <form method="post" id="loginform" action="{home}giadmin">
+          <input type='hidden' name='user' id="user">
+          <input type='hidden' name='pass' id="pass">
+          <div class="form-group has-feedback">
+            <input type="user" class="form-control" placeholder="User" name="userX" id="userX">
+            <span class="glyphicon glyphicon-user form-control-feedback"></span>
+          </div>
+          <div class="form-group has-feedback">
+            <input type="password" class="form-control" placeholder="Password" name="passX" id="passX">
+            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+          </div>
+          <div class="row">
+            <div class="col-xs-8">
+              <!-- <div class="checkbox icheck">
+                <label>
+                  <input type="checkbox"> Remember Me
+                </label>
+              </div> -->
+            </div>
+            <!-- /.col -->
+            <div class="col-xs-4">
+              <!-- <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button> -->
+              <input type='submit' name='submit' class="btn btn-primary btn-block btn-flat" value="Login" class="btn btn-success btn-large" hidden>
+            </div>
+            <!-- /.col -->
+          </div>
+        </form>
+
+      </div>
+      <!-- /.row -->
+    </li>
+    <!-- Menu Footer-->
+  </ul>
+</li
+

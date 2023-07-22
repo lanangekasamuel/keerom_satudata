@@ -1,0 +1,32 @@
+table.detail_data{
+	border-spacing: 1px;
+}
+table.detail_data tr th{
+	background-color: #3c8dbc;
+	border:1px solid #dddddd;
+	padding: 7px;
+	color: #ffffff;
+	text-align: center;
+}
+table.detail_data tr.kelompok_parent td{
+	background-color: #39CCCC;
+}
+table.detail_data tr td{
+	border:1px solid #888888;
+	padding: 3px 6px;
+}
+
+tr.urusan {
+	font-weight: bold; color : #3c8dbc;
+	font-size: 1.1em;
+}
+tr.bidang{
+	font-weight: 300;
+	color : #00a65f;
+}
+tr.bidang td.urusan{
+	padding-left: 20px;
+}
+tr.sub_urusan td.urusan{
+	padding-left: 40px;
+}

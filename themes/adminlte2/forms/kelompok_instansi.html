@@ -1,0 +1,74 @@
+        <div class='row'>
+
+        <div class="col-md-12">
+          <div class="box box-primary">
+            <div class="box-header with-border">
+              <h3 class="box-title">form {status} kelompok</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+
+				<form id="frm_kelompok" name="frm_kelompok" class="form-horizontal" enctype="multipart/form-data" role="form" method="post" action="{rootdir}giadmin/kelompok">
+
+					<div class="form-group">
+					    <div class="col col-sm-2 label-of">parent / sub dari :</div>
+					    <div class="col col-sm-10 value">{parent}</div>
+					</div>					
+					<div class="form-group">
+					    <div class="col col-sm-2 label-of">uraian :</div>
+					    <div class="col col-sm-10 value">{urai}</div>
+					</div>					
+					<div class="form-group">
+					    <div class="col col-sm-2 label-of">satuan :</div>
+					    <div class="col col-sm-10 value">{satuan}</div>
+					</div>				
+					<div class="form-group">
+					    <div class="col col-sm-2 label-of">metode isian :</div>
+					    <div class="col col-sm-10 value">{metode_isian}</div>
+					</div>
+					<div class="form-group" id="line_formula">
+					    <div class="col col-sm-2 label-of">formula :</div>
+					    <div class="col col-sm-10 value">{formula}</div>
+					</div>
+					<div class="form-group">
+					    <div class="col col-sm-2 label-of">instansi :</div>
+					    <div class="col col-sm-10 value">{instansi}</div>
+					</div>
+
+					<div class="form-group" id="control_bidang">
+					    <label for="idbidang_instansi" class="col-sm-2 control-label">Bidang Instansi</label>
+					    <div class="col-sm-6">
+					    	<select name="idbidang_instansi" id="idbidang_instansi" class="form-control" >
+					    		{opsi_bidang}
+					    	</select>
+					    	<p class='help-block'>* wali bidang yang menangani indikator ini</p>
+					    </div>
+					</div>	
+
+					<div class="form-group">
+					    <div class="col col-sm-2 label-of">Sub urusan :</div>
+					    <div class="col col-sm-10 value">{sub_urusan}</div>
+					</div>
+					<div class="form-group">
+					    <div class="col col-sm-2 label-of">penggunaan :</div>
+					    <div class="col col-sm-10 value">{penggunaan}</div>
+					</div>
+
+					<div class="form-group">
+						<div class="col-sm-offset-2 col-sm-10">
+							<!--- onClick="javascript:history.go(-1);"  ---->
+							<button type="reset" class="btn btn-warning btn-flat"  data-dismiss="modal"><i class="fa fa-close"></i>&nbsp;Batal</button>
+						    <button type="submit" class="btn btn-flat btn-info"><i class="fa fa-save"></i>&nbsp;Simpan</button>
+						</div>
+					</div>	
+					<input type="hidden" name="id" id="id" value="{id}" />
+					<input type="hidden" name="cntmode" id="cntmode" value="{action}" />
+				</form>
+			</div>
+		</div>
+		</div>
+<!--
+konsepsi nilai dari kelompok_detail ditampilkan utnuk bisa diedit langusng, jika kelompok memiliki nilai
+-->
+
+			

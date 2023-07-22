@@ -1,0 +1,62 @@
+/*
+	@author anovsiradj <anov.siradj@gin.co.id>
+	@version 20180921,20180923
+
+	modifikasi fitur, tanpa mengganggu js.
+	kalau ada waktu, js juga akan dirubah.
+*/
+
+/* header: brand,usermenu kelihatan aneh, kalau tidak sejajar secara vertical */
+@media (min-width: 768px) {
+	body.guest:not(.startpage) header.main-header .navbar-header .navbar-brand.navbar-brand-large,
+	body.guest:not(.startpage) header.main-header .navbar-custom-menu .dropdown.user-menu a.dropdown-toggle {
+		margin-top: 11px;
+	}
+}
+
+/* sidebar di(=>) tidak dipakai, hanya dipakai sebagai demo theme */
+body.admin aside.control-sidebar,
+body.admin header.main-header ul.nav.navbar-nav > li > a[data-toggle=control-sidebar],
+body.admin header.main-header ul.nav.navbar-nav #btn_intro,
+body.guest header.main-header ul.nav.navbar-nav #btn_intro,
+body.guest footer.main-footer #intro_button, /* startpage */
+
+/* <modal> dengan tips */
+body .modal .modal-header .pull-right.box-tools [onclick*="intro"],
+body .modal .modal-header .pull-right.box-tools [onclick*="Intro"],
+
+/* sembunyikan link ke pencarian */
+body footer.main-footer .pull-right a[href*="search"], /* guest|admin */
+
+/* TIPS kurang berguna, jadi untuk sementara sembunyikan saja,
+sedangkan breadcrumb kurang berguna, karena sudah ada sidebar yg lebih interaktif. */
+body.admin > .wrapper > .content-wrapper > .content-header,
+
+/* header untuk sidebar tidak berguna, search juga tidak berfungsi */
+body.admin aside.main-sidebar ul.sidebar-menu > li.header,
+body.admin aside.main-sidebar form.sidebar-form,
+
+/* box-box seperti ini kurang berguna. lebih baik pakai bs3-collapse. */
+body.admin .box > .box-header .box-tools,
+body.guest .box > .box-header .box-tools,
+
+/* cara cepat hide element, dengan cara beri attr berikut */
+body [hidden] {
+	display: none !important;
+}
+
+body.guest .btn-utama, /* startpage */
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,
+button,input,select,textarea,
+.f-sansa,
+html > body nav,
+html > body aside,
+html > body header,
+html > body .content,
+html > body .wrapper,
+html > body .main-footer,
+html > body .content-wrapper,
+html > body {
+	/*https://gist.github.com/anovsiradj/d4c62e260895b95a2c8accdd1c0c58ad*/
+	font-family: 'system-ui', '-apple-system', BlinkMacSystemFont, Ubuntu, Oxygen, Cantarell, Roboto, 'Droid Sans', 'Segoe UI', Tahoma, 'Microsoft Sans Serif', Helvetica, 'sans-serif';
+}

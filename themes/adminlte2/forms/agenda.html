@@ -1,0 +1,66 @@
+
+				<div class="panel panel-default">
+				    <div class="panel-heading">
+				        Form {status} agenda
+				    </div>
+				    <div class="panel-body">
+
+				    	<form class="form-horizontal" enctype="multipart/form-data" role="form" method="post" action="{rootdir}giadmin/agenda">	
+				    	<div class="form-group">
+										<label for="title" class="col-sm-2 control-label">Tanggal</label>
+									    <div class="col-sm-2 input-group"  data-date-format="yyyy-mm-dd">
+									      <input type="text" class="form-control" name="postdate" id="postdate" value="{postdate}" >
+									      <span class="input-group-btn">
+									        <button class="btn btn-default add-on" type="button" onclick="$('#postdate').focus();"><span class="fa fa-calendar"></span></button>
+									      </span>
+									    </div>
+									</div>	
+						<div class="form-group">
+											    <label for="agenda" class="col-sm-2 control-label">Agenda</label>
+											    <div class="col-sm-10">
+											      <input type="text" class="form-control" name="agenda" id="agenda" 
+											      placeholder="isikan agenda" value="{agenda}" >
+											    </div>
+											  </div><div class="form-group">
+										    <label for="content" class="col-sm-2 control-label">Keterangan</label>
+										    <div class="col-sm-10">
+												<textarea class="form-control" name="content" 
+												id="content" rows="3">{content}</textarea>
+											</div>
+										 </div>
+										 <div class="form-group">
+											    <label for="lokasi" class="col-sm-2 control-label">Lokasi</label>
+											    <div class="col-sm-10">
+											      <input type="text" class="form-control" name="lokasi" id="lokasi" 
+											      placeholder="isikan lokasi" value="{lokasi}" >
+											    </div>
+											  </div>
+											  <div class="form-group">
+											    <label for="image" class="col-sm-2 control-label">Gambar </label>
+											    <div class="col-sm-10">
+											    	<input type="file" name="image" id="image">
+											    	<p class="help-block">File gambar format jpg ukuran 108 x 83px  </p>
+											  	</div>
+											  </div>
+						 <div class="form-group">
+						    <div class="col-sm-offset-2 col-sm-10">
+						      <button type="submit" class="btn btn-default">Submit</button>
+						    </div>
+						 </div>	
+						 <input type="hidden" name="id" id="id" value="{id}" />
+					  	 <input type="hidden" name="cntmode" id="cntmode" value="{action}" />
+					    </form>
+					</div>
+				</div>
+
+				<script>
+				
+					$('#postdate').datepicker({
+						format: 'yyyy-mm-dd'
+					}).on('changeDate', function(ev){					
+						$('#postdate').text($('#postdate').data('date'));					
+						$('#postdate').datepicker('hide');
+						});
+								
+				
+				</script>
